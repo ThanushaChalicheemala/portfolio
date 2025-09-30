@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanusha | Portfolio</title>
+
+  <!-- Font Awesome CDN (works without kit) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+ <!-- 👇 Skip to <style> for color changes -->
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f9fc; /* light grayish */
+    color: #2e3a59;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #1c2a4d; /* navy blue */
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+  }
+
+  nav a:hover {
+    color: #5c7cfa;
+    transform: scale(1.1);
+  }
+
+  header {
+    text-align: center;
+    background: #1c2a4d;
+    color: white;
+    padding: 5rem 1rem 3rem;
+    margin-top: 60px;
+    animation: fadeInDown 1.5s ease-in-out;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+  }
+
+  header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+
+  .profile-pic:hover {
+    transform: scale(1.1);
+  }
+
+  .social-links {
+    margin-top: 1rem;
+  }
+
+  .social-links a {
+    margin: 0 10px;
+    font-size: 1.8rem;
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+  }
+
+  .social-links a:hover {
+    color: #a5c8ff;
+    transform: scale(1.2);
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+
+  h2 {
+    color: #1c2a4d;
+    border-left: 5px solid #5c7cfa;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    margin: 0.5rem 0;
+    padding: 0.7rem;
+    background: #f2f4f8;
+    border-radius: 6px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  ul li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(92, 124, 250, 0.1);
+    background: #e9ecf5;
+  }
+
+  .projects li {
+    background: #f7f9fc;
+  }
+
+  .contact {
+    text-align: center;
+    background: #5c7cfa;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .contact a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .contact a:hover {
+    color: #ffe;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1c2a4d;
+    color: white;
+    margin-top: 2rem;
+    animation: fadeIn 2.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <!-- ✅ Fixed: Correct Google Drive image embed -->
+ <img src="https://lh3.googleusercontent.com/d/160dkxsHn6KHyvZ5RoWFXJNTjRGKzNfwM=w200-h200"
+     alt="Profile Photo"
+     style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+
+    <h1>🌟 C. Thanusha 🌟</h1>
+    <p>Student | Java Learner | Video Editing Enthusiast</p>
+
+    <!-- ✅ Fixed: Social icons with working links -->
+    <div class="social-links">
+      <a href="https://github.com/ThanushaChalicheemala" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/chalicheemala-thanusha-7ba734246/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:thanushachalicheemalaa@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </header>
+
+  <div class="container" id="about">
+    <h2>About Me</h2>
+    <p>I build small projects to learn Java and video editing.</p>
+  </div>
+
+  <div class="container" id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Java (basic)</li>
+      <li>Problem Solving</li>
+      <li>Git</li>
+      <li>Video Editing (beginner)</li>
+    </ul>
+  </div>
+
+ <div class="container" id="projects">
+    <h2>Projects</h2>
+    <ul class="projects">
+      <li>Portfolio Website</li>
+      <li>Crop Recommendation System</li>
+    </ul>
+  </div>
+
+  <div class="container contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:thanushachalicheemalaa@gmail.com">thanushachalicheemalaa@gmail.com</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Thanusha | Built with ❤️ and HTML & CSS</p>
+  </footer>
+</body>
+</html>
